@@ -92,7 +92,7 @@ class HomePage extends StatelessWidget {
                                   style: TextStyle(
                                     fontWeight: FontWeight.bold,
                                     fontSize: 18,
-                                    color: themeProvider.getTheme().textTheme.bodyText1?.color,
+                                    color: themeProvider.getTheme().textTheme.bodyLarge?.color,
                                   ),
                                   maxLines: 1,
                                   overflow: TextOverflow.ellipsis,

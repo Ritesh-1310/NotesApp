@@ -1,9 +1,11 @@
 // Initialization 
+require("dotenv").config();
+
 const express = require('express');
 const app = express();
 
 const mongoose = require('mongoose');
-const Note = require('./models/Note');
+// const Note = require('./models/Note');
 
 const bodyParser = require('body-parser');
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -23,7 +25,7 @@ mongoose.connect(mongoDbPath).then(function() {
 });
 
 // Starting the server on a PORT
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 8000;
 app.listen(PORT, function() {
     console.log("Server started at PORT: " + PORT);
 });
