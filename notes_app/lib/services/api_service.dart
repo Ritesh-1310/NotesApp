@@ -4,7 +4,8 @@ import 'package:http/http.dart' as http;
 import '../models/note.dart';
 
 class ApiService {
-  static String _baseUrl = "http://notesapp-env.eba-hirxnfpm.ap-south-1.elasticbeanstalk.com/notes";
+  // static String _baseUrl = "http://notesapp-env.eba-hirxnfpm.ap-south-1.elasticbeanstalk.com/notes";
+  static String _baseUrl = "https://notes-app-alpha-six.vercel.app/notes";
 
   // Add a new note via API
   static Future<void> addNote(Note note) async {
