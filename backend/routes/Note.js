@@ -3,6 +3,11 @@ const router = express.Router();
 
 const Note = require('./../models/Note');
 
+
+router.get("/", (req, res) => {
+    res.send("This is NotesApp API");
+});
+
 router.post("/list", async function(req, res) {
     var notes = await Note.find({ userid: req.body.userid });
     res.json(notes);
